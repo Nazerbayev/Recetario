@@ -9,5 +9,6 @@ dependencies = [
     "mayim>=1.3.0",
     "pydantic>=2.12.3",
     "sanic[ext]>=25.3.0",
+    "typer>=0.20.0",
     "ujson>=5.11.0",
 ]

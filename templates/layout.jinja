@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Recetario{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/layout.css">
+    {% block styles %}
+    {% endblock %}
+</head>
+<body>
+    {% block header %}
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/recetas">Recetas</a></li>
+                    {% block nav_items %}{% endblock %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% endblock %}
+    
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+    {% block footer %}
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Recetario. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    {% endblock %}
+    
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>
